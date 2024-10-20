@@ -124,4 +124,9 @@ def count_ships(grid):
 def play_game():
     print("Welcome to Battleships!") 
     grid_size = int(input("Enter the grid size (e.g., 5 for a 5x5 grid):\n "))
-    
+    num_ships = int(input("Enter the number of ships:\n "))
+    player_grid = create_grid(grid_size)
+    computer_grid = create_grid(grid_size)
+    player_display_grid = create_grid(grid_size)
+    computer_display_grid = create_grid(grid_size)
+    computer_memory = set()
