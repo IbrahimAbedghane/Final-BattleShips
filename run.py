@@ -140,3 +140,11 @@ def play_game():
     computer_ships_remaining = count_ships(computer_grid)
 
     player_turn = True
+
+    while player_ships_remaining > 0 and computer_ships_remaining > 0:
+        if player_turn:
+            print("\nYour turn:")
+
+    
+    
+
