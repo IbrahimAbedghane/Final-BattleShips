@@ -117,5 +117,8 @@ def player_place_ships(grid, num_ships):
             display_grid(grid, hide_ships=False)
         except ValueError:
             print("Invalid input. Please enter integer values.")
-            
+
+def count_ships(grid):
+    return sum(cell == 'S' for now in grid for cell in row)
+
     
