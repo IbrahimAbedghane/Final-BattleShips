@@ -78,3 +78,13 @@ def computer_guess(player_grid, computer_memory):
                 print(f"Computer guessed ({x}, {y}) - Miss.")
                 player_grid[y][x] = 'O'
                 return False
+
+def player_place_ships(grid, num_ships):
+    size = len(grid)
+    ships_placed = 0
+    while ships_placed < num_ships:
+        print(f"Place ship {ships_placed + 1} of {num_ships}")
+        orientation = input("Enter orientation (H for horizontal, V for vertical):\n ").upper()
+        if orientation not in ['H', 'V']:
+            print("Invalid orientation. Please enter 'H' or 'V'.")
+            continue
