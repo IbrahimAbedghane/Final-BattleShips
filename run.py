@@ -74,3 +74,7 @@ def computer_guess(player_grid, computer_memory):
                 print(f"Computer guessed ({x}, {y}) - Hit!")
                 player_grid[y][x] = 'X'
                 return True
+            else:
+                print(f"Computer guessed ({x}, {y}) - Miss.")
+                player_grid[y][x] = 'O'
+                return False
