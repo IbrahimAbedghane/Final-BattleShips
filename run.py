@@ -88,3 +88,8 @@ def player_place_ships(grid, num_ships):
         if orientation not in ['H', 'V']:
             print("Invalid orientation. Please enter 'H' or 'V'.")
             continue
+        try:
+            ship_length = int(input("Enter ship length (2 or 3):\n "))
+            if ship_length not in [2, 3]:
+                print("Invalid ship length. Please enter 2 or 3.")
+    
