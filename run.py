@@ -47,3 +47,18 @@ def get_user_guess(size):
                 print("Coordinates are off-grid. Please try again.")
         except ValueError:
             print("Invalid input. Please enter integer values.")
+
+def process_guess(opponent_grid, display_grid, x, y):
+    if display_grid[y][x] in ['X', 'O']:
+        print("Location already guessed.")
+        return False
+    elif opponent_grid[y][x] == 'S':
+        print("Hit!")
+        display_grid[y][x] = 'X'
+        opponent_grid[y][x] = 'X'
+        return True
+    else:
+        print("Miss.")
+        display_grid[y][x] = 'O'
+        opponent_grid[y][x] = 'O'
+        return False
