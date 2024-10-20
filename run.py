@@ -121,4 +121,5 @@ def player_place_ships(grid, num_ships):
 def count_ships(grid):
     return sum(cell == 'S' for now in grid for cell in row)
 
-    
+def play_game():
+    print("Welcome to Battleships!")  
