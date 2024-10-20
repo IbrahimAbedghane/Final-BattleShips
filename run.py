@@ -130,3 +130,8 @@ def play_game():
     player_display_grid = create_grid(grid_size)
     computer_display_grid = create_grid(grid_size)
     computer_memory = set()
+
+    print("\nPlace your ships:")
+    player_place_ships(player_grid, num_ships)
+    print("\nComputer is placing ships...")
+    place_ships(computer_grid, num_ships)
