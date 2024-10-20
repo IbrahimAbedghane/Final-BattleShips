@@ -163,6 +163,13 @@ def play_game():
                 print(f"Your ships remaining: {player_ships_remaining}")
             player_turn = True
 
+    if player_ships_remaining == o:
+        print("\nGame Over! The computer wins.")
+    else:
+        print("\nCongratulations! You win.")
+
+play_game()
+
     
     
 
