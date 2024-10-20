@@ -144,6 +144,11 @@ def play_game():
     while player_ships_remaining > 0 and computer_ships_remaining > 0:
         if player_turn:
             print("\nYour turn:")
+            display_grid(player_display_grid, hide_ships=False)
+            x, y = get_user_guess(grid_size)
+            hit = process_guess(computer_grid, player_display_grid, x, y)
+            if hit:
+                computer_ships_remaining -= 1
 
     
     
