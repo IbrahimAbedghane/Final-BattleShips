@@ -35,3 +35,15 @@ def place_ships(grid, num_ships):
                 for i in range(ship_length):
                     grid[row + i][col] = 'S'
                 ships_placed += 1
+
+def get_user_guess(size):
+    while True:
+        try:
+            x = int(input("Enter column (X coordinate):\n "))
+            y = int(input("Enter row (Y coordinate):\n "))
+            if 0 <= x < size and 0 <= y < size:
+                return x, y
+            else:
+                print("Coordinates are off-grid. Please try again.")
+        except ValueError:
+            print("Invalid input. Please enter integer values.")
