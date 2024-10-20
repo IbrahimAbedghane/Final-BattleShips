@@ -70,3 +70,7 @@ def computer_guess(player_grid, computer_memory):
         y = random.randint(0, size - 1)
         if (x, y) not in computer_memory:
             computer_memory.add((x, y))
+            if player_grid[y][x] == 'S':
+                print(f"Computer guessed ({x}, {y}) - Hit!")
+                player_grid[y][x] = 'X'
+                return True
