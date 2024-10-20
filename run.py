@@ -135,3 +135,6 @@ def play_game():
     player_place_ships(player_grid, num_ships)
     print("\nComputer is placing ships...")
     place_ships(computer_grid, num_ships)
+
+    player_ships_remaining = count_ships(player_grid)
+    computer_ships_remaining = count_ships(computer_grid)
