@@ -99,4 +99,7 @@ def player_place_ships(grid, num_ships):
                 if x + ship_length > size:
                     print("Ship goes off-grid. Try again.")
                     continue
+                if any(grid[y][x + i] != '~' for i in range(ship_length)):
+                    print("Space already occupied. Try again.")
+                    continue
     
