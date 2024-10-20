@@ -138,3 +138,5 @@ def play_game():
 
     player_ships_remaining = count_ships(player_grid)
     computer_ships_remaining = count_ships(computer_grid)
+
+    player_turn = True
