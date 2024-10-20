@@ -149,6 +149,10 @@ def play_game():
             hit = process_guess(computer_grid, player_display_grid, x, y)
             if hit:
                 computer_ships_remaining -= 1
+                print(f"Computer ships remaining: {computer_ships_remaining}")
+            else:
+                print(f"Computer ships remaining: {computer_ships_remaining}")
+            player_turn = False
 
     
     
