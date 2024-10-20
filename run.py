@@ -65,3 +65,8 @@ def process_guess(opponent_grid, display_grid, x, y):
 
 def computer_guess(player_grid, computer_memory):
     size = len(player_grid)
+    while True:
+        x = random.randint(0, size - 1)
+        y = random.randint(0, size - 1)
+        if (x, y) not in computer_memory:
+            computer_memory.add((x, y))
