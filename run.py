@@ -153,6 +153,15 @@ def play_game():
             else:
                 print(f"Computer ships remaining: {computer_ships_remaining}")
             player_turn = False
+        else:
+            print("\nComputer's turn:")
+            hit = computer_guess(player_grid, computer_memory)
+            if hit:
+                player_ships_remaining -= 1
+                print(f"Your ships remaining: {player_ships_remaining}")
+            else:
+                print(f"Your ships remaining: {player_ships_remaining}")
+            player_turn = True
 
     
     
