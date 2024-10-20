@@ -62,3 +62,6 @@ def process_guess(opponent_grid, display_grid, x, y):
         display_grid[y][x] = 'O'
         opponent_grid[y][x] = 'O'
         return False
+
+def computer_guess(player_grid, computer_memory):
+    size = len(player_grid)
