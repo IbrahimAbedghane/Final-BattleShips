@@ -92,4 +92,11 @@ def player_place_ships(grid, num_ships):
             ship_length = int(input("Enter ship length (2 or 3):\n "))
             if ship_length not in [2, 3]:
                 print("Invalid ship length. Please enter 2 or 3.")
+                continue
+            x = int(input("Enter starting column (X coordinate):\n"))
+            y = int(input("Enter starting row (Y coordinate):\n "))
+            if orientation == 'H':
+                if x + ship_length > size:
+                    print("Ship goes off-grid. Try again.")
+                    continue
     
