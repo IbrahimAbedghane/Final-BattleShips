@@ -122,4 +122,6 @@ def count_ships(grid):
     return sum(cell == 'S' for now in grid for cell in row)
 
 def play_game():
-    print("Welcome to Battleships!")  
+    print("Welcome to Battleships!") 
+    grid_size = int(input("Enter the grid size (e.g., 5 for a 5x5 grid):\n "))
+    
