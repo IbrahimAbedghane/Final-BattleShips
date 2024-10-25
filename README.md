@@ -18,3 +18,7 @@
 - Possible Improvements
 - License 
 - Contact Information
+
+## Introduction
+
+Welcome to the Battleships Game in Python! This is a console-based implementation of the childhood classic Battleships game where you play again the computer. You can customise your grid size and the number of ships, place your ships strategically on the grid and try to sink all of the computer's ships before it sinks yours!
