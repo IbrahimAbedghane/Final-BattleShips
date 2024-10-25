@@ -135,3 +135,15 @@ The game is structured into several functions for modularity and clarity.
 - Graphical User Interfact: Develop a GUI version using external libraries 
 - Save and Load Game:Implement functionality to save the game state and load it later.
 - Network Multiplayer: Allow two players to play against each other over a network.
+
+## License
+
+This project is open-source and is available on Heroku
+
+## Contact Information
+
+For any questions, suggestions or contributions please contact:
+- Name: [Ibrahim Abedghane]
+- Email: [abedghaneibrahim94@gmail.com]
+
+Enjoy the game and happy hunting!
