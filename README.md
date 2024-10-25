@@ -36,3 +36,7 @@ Welcome to the Battleships Game in Python! This is a console-based implementatio
 ## Prerequisites
 
 - Make sure you have the latest Python installed on your system in order to run the game.
+
+## Installation
+
+- You can find the Battleships Game [Here](https://dashboard.heroku.com/apps/finalbattleships/deploy/github)
