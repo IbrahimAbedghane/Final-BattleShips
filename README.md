@@ -91,3 +91,23 @@ Input the number of ships you wish to have in the game.
 2. S: Ship (only visible on your grid).
 3. X: Hit.
 4. O: Miss.
+
+## Ship Placement Rules
+
+- Ships can be placed either horizontally (H) or vertically (V).
+- Ship lengths can be either 2 or 3.
+- Ships cannot overlap with other ships.
+- Ships cannot extend betond the boundaries of the grid.
+
+## Turn Mechanics
+
+- Valid Guesses:
+1. You cannot guess a location you have already guessed.
+2. Coordinates must be within the bounds of the grid.
+3. Processing Guesses:
+- If a guess hits a ship, the cell is marked with X.
+- If a guess misses, the cell is marked with O.
+4. Ship Sinking:
+- Each hit reduces the opponent's remaining ships by one.
+- The game tracks and displays the number of ships remaining for both players.
+
