@@ -5,7 +5,7 @@ def create_grid(size):
 
 def display_grid(grid, hide_ships=True):
     size = len(grid)
-    print(" " + " ".join(str(i) for i in range(size)))
+    print("  " + " ".join(str(i) for i in range(size)))
     for idx, row in enumerate(grid):
         display_row = []
         for cell in row:
@@ -13,14 +13,14 @@ def display_grid(grid, hide_ships=True):
                 display_row.append('~')
             else:
                 display_row.append(cell)
-        print(f"{idx} "+" ".join(display_row))
+        print(f"{idx} " + " ".join(display_row))
 
 def place_ships(grid, num_ships):
-    siz = len(grid)
+    size = len(grid)
     ships_placed = 0
     while ships_placed < num_ships:
         orientation = random.choice(['H', 'V'])
-        ship_length = random.randint(2, 3) #Ships of length 2 or 3
+        ship_length = random.randint(2, 3)  # Ships of length 2 or 3
         if orientation == 'H':
             row = random.randint(0, size - 1)
             col = random.randint(0, size - ship_length)
@@ -119,10 +119,10 @@ def player_place_ships(grid, num_ships):
             print("Invalid input. Please enter integer values.")
 
 def count_ships(grid):
-    return sum(cell == 'S' for now in grid for cell in row)
+    return sum(cell == 'S' for row in grid for cell in row)
 
 def play_game():
-    print("Welcome to Battleships!") 
+    print("Welcome to Battleships!")
     grid_size = int(input("Enter the grid size (e.g., 5 for a 5x5 grid):\n "))
     num_ships = int(input("Enter the number of ships:\n "))
     player_grid = create_grid(grid_size)
@@ -163,13 +163,11 @@ def play_game():
                 print(f"Your ships remaining: {player_ships_remaining}")
             player_turn = True
 
-    if player_ships_remaining == o:
+    if player_ships_remaining == 0:
         print("\nGame Over! The computer wins.")
     else:
         print("\nCongratulations! You win.")
 
 play_game()
-
-    
     
 
