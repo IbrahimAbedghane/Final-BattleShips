@@ -59,3 +59,18 @@ Input the number of ships you wish to have in the game.
 - The grid will display your ships after each placement.
 5. Computer Places Ships:
 - The computer will automatically place its ships randomly on its grid.
+
+## Gameplay
+
+- Player's Turn:
+1. View Opponent's Grid:
+- The grid displays your previous hits and misses on the computer's grid.
+2. Make a Guess:
+- Enter Column (X coordinate): An integer between 0 and grid size -1.
+- Enter Row (Y coordinate): An integer between 0 and grid size -1.
+- The game will notify you if it's a hit (Hit!) or a miss (Miss.).
+- The computer's remaining ships will be updated.
+- Computer's Turn:
+- The computer will make a guess on your grid.
+- You will be informed whether the computer scored a hit or a miss.
+- Your remaining ships will be updated.
