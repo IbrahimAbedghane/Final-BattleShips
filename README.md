@@ -111,3 +111,20 @@ Input the number of ships you wish to have in the game.
 - Each hit reduces the opponent's remaining ships by one.
 - The game tracks and displays the number of ships remaining for both players.
 
+## Code Overview
+
+The game is structured into several functions for modularity and clarity.
+
+### Function Descriptions
+- create_grid(size): Create and returns a size x size grid initialised with ~
+- display_grid(grid, hide_ships=True): Displays the grid in the console
+- If hide_ships is True it hides the ships (replaces S with ~)
+- place_ships(grid, num_ships): Randomly places num_ships ships on the grid for the computer
+- Ships are of a random length (2 or 3) and random orientation.
+- player_place_ships(grid, num_ships): Allows the player to place their ships on their grid and validates inputs for orientation, ship length and starting coordinates.
+- get_user_guess(size): Prompts the player to enter valid coordinates for their guess and ensures the coordinates are within the grid.
+- process_guess(opponent_grid, display_grid, x, y): Processes the player's guess against the computer's grid and updated both the opponent's grid and the player's display grid and returns True if it's a hit, False otherwise
+- computer_guess(player_grid, computer_memory): The computer makes a random guess and ensuring it doesn't guess the same location twice using computer_memory. It then proceeds to update the player's grid with the result.
+- count_ships(grid): Counts and returns the number of ships (S) remaining on a grid.
+- play_game(): The main function that runs the game, manages the game loop and alternates turns between the player and the computer and finally determines and announces the winner.
+
