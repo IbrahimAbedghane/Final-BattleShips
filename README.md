@@ -128,3 +128,10 @@ The game is structured into several functions for modularity and clarity.
 - count_ships(grid): Counts and returns the number of ships (S) remaining on a grid.
 - play_game(): The main function that runs the game, manages the game loop and alternates turns between the player and the computer and finally determines and announces the winner.
 
+## Possible Improvements 
+
+- Enhanced AI for Computer: Implement smarter guessing logic for the computer after it scores a hit.
+- Different Ship Types: Introduce ships of various lengths and types (e.g., Battleship, Cruiser etc).
+- Graphical User Interfact: Develop a GUI version using external libraries 
+- Save and Load Game:Implement functionality to save the game state and load it later.
+- Network Multiplayer: Allow two players to play against each other over a network.
