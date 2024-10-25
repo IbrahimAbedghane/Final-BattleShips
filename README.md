@@ -1,6 +1,6 @@
-## Battleships Game in Python
+# Battleships Game in Python
 
-# Table of Contents
+## Table of Contents
 - Introduction
 - Features
 - Prerequisites
