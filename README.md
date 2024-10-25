@@ -74,3 +74,20 @@ Input the number of ships you wish to have in the game.
 - The computer will make a guess on your grid.
 - You will be informed whether the computer scored a hit or a miss.
 - Your remaining ships will be updated.
+
+## Ending the Game
+
+- The game continues until either the player or the computer has no ships remaining.
+- The game will announce the winner.
+- Player Wins: Congratulations! You win.
+- Computer Wins: Game Over! The computer wins.
+
+## Game Rules and Mechanics
+
+### Grid Representation
+
+- Symbols:
+1. ~: Unknown or unexplored cell.
+2. S: Ship (only visible on your grid).
+3. X: Hit.
+4. O: Miss.
