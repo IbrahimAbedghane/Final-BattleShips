@@ -40,3 +40,22 @@ Welcome to the Battleships Game in Python! This is a console-based implementatio
 ## Installation
 
 - You can find the Battleships Game [Here](https://dashboard.heroku.com/apps/finalbattleships/deploy/github)
+
+## Game Setup
+
+1. Run the Game: 
+Open the link above and get stuck right in!
+2. Enter Grid Size:
+When prompted, enter the desired grid size (e.g., 5 for a 5x5 grid).
+3. Enter Number of Ships:
+Input the number of ships you wish to have in the game.
+4. Place Your Ships:
+- For each ship, you will be prompted to:
+1. Enter Orientation: H for horizontal or V for vertical.
+2. Enter Ship Length: Choose between 2 or 3.
+3. Enter Starting Coordinates:
+- Colum (X coordinate): An integer between 0 and grid size -1.
+- Row (Y coordinate): An integer between 0 and gride size -1.
+- The grid will display your ships after each placement.
+5. Computer Places Ships:
+- The computer will automatically place its ships randomly on its grid.
